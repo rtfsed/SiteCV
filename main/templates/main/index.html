@@ -1,0 +1,262 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block header %}
+    <header >
+        <h1 id="log">Misha</h1>
+        <ul class="nav navColumn">
+
+            <li><a onclick="scr('hello')">HELLO</a></li>
+            <li><a onclick="scr('skills')" >SKILLS</a></li>
+            <li><a onclick="scr('expirience')">EXPERIENCE</a></li>
+            <li><a onclick="scr('education')">EDUCATION</a></li>
+            <li><a onclick="scr('feedback')">FEEDBACK</a></li>
+            <li><a onclick="scr('contact')">CONTACT ME</a></li>
+            <span class="close-btn" onclick="toglMenu()">&times;</span>
+        </ul>
+    <div class="hamburger"  onclick="Menu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    </header>
+{% endblock %}
+{% block hello %}
+    <section id="hello">
+        <div class="about">
+            <p id="name">I am Misha Berlizov</p>
+            <p id="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, commodi corporis debitis dolores facere fugiat magni maiores modi nisi placeat porro sequi? Ad alias dolorem doloremque dolorum eius et eum exercitationem facilis hic ipsam natus neque obcaecati, quas quis repellendus similique sit tempora veniam? Aut enim quos repellat sed unde.</p>
+            <p><span style="margin-right:38px;">PHONE</span><span>+393294662333</span></p>
+            <p><span style="margin-right:48px;">EMAIL</span><span>mishabereza4@gmail.com</span></p>
+            <p><span style="margin-right:30px;">ADRESS</span><span>Regione Meani 6a,Limone Piemonte,Italia</span></p>
+            <p><span style="margin-right:30px;">SOSIAL</span><span>
+                <a href="https://wa.me/+393294662333"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://t.me/rtfsed"><i class="fab fa-telegram"></i></a>
+                <a href="https://www.instagram.com/discreid"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/rtfsed"><i class="fab fa-github"></i></a>
+                 <a href="https://discordapp.com/users/558665082331201536/"><i class="fab fa-discord"></i></a>
+         </span></p>
+          <button>Contact Me</button>
+           <button>Download CV</button>
+        </div>
+        <div class="io">
+            <img src="{% static 'img/main/io.jpeg' %}" alt="">
+        </div>
+    <div class="img">
+
+    </div>
+    </section>
+{% endblock %}
+{% block skills %}
+     <section id="skills">
+     <div class="title">
+            <h1>SKILLS</h1>
+         <div class="zigzag wow slideInLeft" style="bottom: -180px; left: 0px;">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
+                    <g>
+                       <rect class="st0" width="105" height="20"></rect>
+                        <g>
+                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "></polyline>
+                        </g>
+                    </g>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
+                    <g>
+                        <rect class="st0" width="105" height="20"></rect>
+                        <g>
+                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "></polyline>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+         </div>
+
+         <h2>I am inspired by creating great work with people who are as passionate as I am about building something awesome.</h2>
+        <div class="skil">
+            <h4>Web Development</h4>
+            <p>Javascript, Coffeescript, JAVA, Python, PHP, Go, Node.js, MongoDB, Redis, PostgreSQL, WebStorm.</p>
+            <hr>
+            <h4>Frontend Development</h4>
+            <p>HTML, CSS, LESS, SASS, Bootstrap, Wordpress, Drupal, Phonegap / Cordova, Ionic, Foundation, Angular.js.</p>
+        </div>
+        <div class="skill">
+            <h4>UI\UX Design</h4>
+            <p>Photoshop, Illustrator, Sketch, Axure, XMind, Prototyping, Wireframing, User Research, Usability Testing.</p>
+            <hr>
+            <h4>Consulting & SEO Audit</h4>
+            <p>Screaming Frog, Woorank, Raventools, Semrush, Moz, WebCEO, Google Analytics, ChartBeat, CrazyEgg.</p>
+        </div>
+     </section>
+{% endblock %}
+{% block expirience %}
+     <section id="expirience">
+     <div class="title" >
+            <h1>EXPIRIENCE</h1>
+         <div class="zigzag wow slideInLeft" style="bottom: -440px;">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
+                    <g>
+                       <rect class="st0" width="105" height="20"></rect>
+                        <g>
+                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "></polyline>
+                        </g>
+                    </g>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
+                    <g>
+                        <rect class="st0" width="105" height="20"></rect>
+                        <g>
+                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "></polyline>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+     </div>
+     <h2>I partner with startups, organizations and Fortune 500 companies to build digital products that
+         help clients overcome challenges and create lasting connections with millions of people every day.</h2>
+     <div class="expir">
+     <h4>Web Developer</h4>
+     <p>May, 2014 — Present</p>
+     <p>Designed and developed user-friendly website, including
+      optimized check-out page that increased user clicks, and subsequently customer purchases by 20%.</p>
+     <span id="tx-1" >Coolor Studio</span>
+            <hr>
+     <h4>Middle Fronted Developer</h4>
+     <p>Jan, 2013 — May, 2014</p>
+     <p>Leading a small team on a variety of development projects and
+         delivering solutions to meet and exceed clients’ briefs.</p>
+     <span id="tx-2" >Illskill Agency</span>
+             <hr>
+
+         <h4>IT Specialist</h4>
+     <p>Dec, 2009 — Jan, 2013</p>
+     <p>Revamped web application security applications, minimizing hacker attacks from 2.3% to 0.02%.</p>
+     <span id="tx-3" >Motion Studio</span>
+     </div>
+     </section>
+{% endblock %}
+{% block education %}
+     <section id="education">
+        <div class="title" >
+            <h1>EDUCATION</h1>
+         <div class="zigzag wow slideInLeft" style="bottom: -245px;">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
+                    <g>
+                       <rect class="st0" width="105" height="20"></rect>
+                        <g>
+                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "></polyline>
+                        </g>
+                    </g>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
+                    <g>
+                        <rect class="st0" width="105" height="20"></rect>
+                        <g>
+                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "></polyline>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+         </div>
+         <h2>All my life I have been driven by my strong belief that education is important.
+             I try to learn something new every single day.</h2>
+         <div class="edu">
+             <h4>Google Developer Training</h4>
+             <p>Apr, 2015 — May, 2015</p>
+             <p>Learn to use App Engine, Google's Platform as a Service, to build the backend for web apps
+                  that scale not only as your user base grows but as request volumes peaks with sudden demand.</p>
+             <span id="tx-4" >Google</span>
+             <hr>
+             <h4>Software Development</h4>
+
+             <p>Jan, 2005 — May, 2009</p>
+             <p>BSc (Hons) in Software Development. Outstanding Academic Achievement Award.</p>
+             <span id="tx-5" >Boston University</span>
+         </div>
+
+    </section>
+{% endblock %}
+{% block feedback %}
+     <section id="feedback">
+     <div class="title" >
+           <h1>FEEDBACK</h1>
+         <div class="zigzag wow slideInLeft" style="bottom: -680px;">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
+                    <g>
+                       <rect class="st0" width="105" height="20"></rect>
+                        <g>
+                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "></polyline>
+                        </g>
+                    </g>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
+                    <g>
+                        <rect class="st0" width="105" height="20"></rect>
+                        <g>
+                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "></polyline>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+         </div>
+     <h2>Take a look at the reviews of my customers and ensure the quality of my services.</h2>
+     <div class="feed">
+
+         <h4 class="name">Anonimo</h4>
+          <img id="im-1" src="{% static 'img/main/among.png' %}" alt="amongus">
+         <p>"Considers problems as a challenge and enjoys finding creative yet appropriate solutions. Danny is able to work out his own solutions, but also works well with a group to solve problems. Performs most jobs well and has the habit of checking work outcomes.
+             Danny is achieving excellence in some areas but in others is not yet achieving the highest standards.""</p>
+         <span id="tx-6">President @ Coolor Studio</span>
+         <hr>
+         <h4 class="name">Anonimo</h4>
+         <img id="im-2" src="{% static 'img/main/among.png' %}" alt="amongus">
+         <p>“He will always try to do what is required, even if it means performing tasks that are not in the job description or if required to do extra work unexpectedly. However, may sometimes complain about the extra load. Aiming for a top job in the organization.
+             He sets very high standards, aware that this will bring attention and promotion.”</p>
+         <span id="tx-7">Project Manager @ Motion Studio</span>
+         <hr>
+         <h4 class="name">Anonimo</h4>
+         <img id="im-3" src="{% static 'img/main/among.png' %}" alt="amongus">
+         <p>“When working to a firm but realistic deadline, Danny always completes tasks to a high standard. Care and accuracy is obvious even when put under pressure of time.
+             Prepared to work all the extra hours it takes to meet the deadline.”</p>
+         <span id="tx-8">Developer @ Illskill Agency</span>
+
+     </div>
+    </section>
+{% endblock %}
+{% block contact %}
+     <section id="contact">
+     <div class="title" >
+           <h1>CONTACT ME</h1>
+         <div class="zigzag wow slideInLeft" style="bottom: -205px; left: -25px;">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
+                    <g>
+                       <rect class="st0" width="105" height="20"></rect>
+                        <g>
+                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "></polyline>
+                        </g>
+                    </g>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
+                    <g>
+                        <rect class="st0" width="105" height="20"></rect>
+                        <g>
+                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "></polyline>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+         </div>
+
+        <form method="post" autocomplete='on'>
+        {% csrf_token %}
+        {% for field in form %}
+            <div>
+                {{ field }}
+            </div>
+        {% endfor %}
+        <button type="submit">Send</button>
+    </form>
+    </section>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

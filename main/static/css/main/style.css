@@ -1,0 +1,665 @@
+html,body{
+    width: 100%;
+    height:100%;
+    padding: 0;
+    margin: 0;
+
+}
+
+header{
+    background-color: #fdfafa;
+    display: flex;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+    height: 55px;
+    width:100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.nav {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    position:absolute;
+    right: 180px;
+}
+.nav>li{
+    padding: 15px;
+}
+.nav>li>a{
+    font-family: Lato, sans-serif;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav>li>a:hover{
+    color:blue;
+    text-decoration:underline ;
+}
+#log{
+    font-family: Lato, sans-serif;
+    position: relative;
+    left: 157px;
+}
+section{
+    font-family: Lato, sans-serif;
+    display: flex;
+    padding-left: 10%;
+    padding-right:10%;
+
+    border-bottom: 1px solid #e3e3e3;
+
+}
+#hello{
+    margin-top: 80px;
+    height: auto;
+    position: relative;
+
+}
+.io>img{
+    position: relative;
+    top: -10px;
+    left: 100px;
+    width: 600px;
+    height: 400px;
+}
+.about>p>span>a{
+    margin: 10px;
+}
+#about{
+    width: 600px;
+}
+.about>button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #a54caf; 
+    color: white; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px; 
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right:100px;
+}
+.about>button:hover{
+    background-color: #8245a0;
+}
+#skills{
+   height: auto;
+}
+#skills>h2{
+    font-family:Roboto,sans-serif;
+    color: #252525;
+    position: relative;
+    top: 40px;
+    left: -94px;
+    width: 360px;
+    height: 100px;
+    font-size: 15px;
+}
+.skil,.skill>p{
+    font-family:Roboto,sans-serif;
+    color: #252525;
+    width: 400px;
+}
+
+.skil,.skill{
+    font-size: 18px;
+    position: relative;
+    margin-right: 20px;
+    left: -20px;
+    width: 450px;
+}
+
+
+#expirience{
+    height: auto;
+}
+#expirience>h2{
+    font-family:Roboto,sans-serif;
+    color: #252525;
+    position: relative;
+    top: 40px;
+    left: -145px;
+    width: 360px;
+    font-size: 15px;
+}
+.expir{
+   font-size: 18px;
+    position: relative;
+
+    top: 30px;
+    left: -100px;
+    width: 900px;
+}
+.expir>span{
+     font-family:Roboto,sans-serif;
+    color: #252525;
+    position: relative;
+
+}
+
+
+#education{
+    height: auto;
+}
+#education>h2{
+    font-family:Roboto,sans-serif;
+    color: #252525;
+    position: relative;
+    top: 40px;
+    left: -140px;
+    width: 368px;
+    font-size: 15px;
+}
+.edu{
+    font-size: 18px;
+    position: relative;
+    top: 30px;
+    left: -100px;
+    width: 900px;
+}
+.edu>p{
+    font-family:Roboto,sans-serif;
+    color: #252525;
+}
+.edu>span{
+     font-family:Roboto,sans-serif;
+    color: #252525;
+    position: relative;
+    top: -163px;
+    left: 240px;
+}
+
+
+
+
+
+#feedback{
+    height: auto;
+}
+#feedback>h2{
+    font-family:Roboto,sans-serif;
+    color: #252525;
+    position: relative;
+    top: 40px;
+    left: -133px;
+    width: 650px;
+    font-size: 15px;
+}
+.feed{
+    margin-top: 15px;
+    position: relative;
+    left: 45px;
+}
+.feed>img{
+    position: relative;
+    top: -50px;
+    left: -60px;
+    width: 50px;
+    height: 50px;
+}
+.feed>p{
+    font-size: 20px;
+    font-family:Roboto,sans-serif;
+    color: #252525;
+    position: relative;
+    top: -80px;
+}
+.feed>span{
+    font-family:Roboto,sans-serif;
+    color: #252525;
+    position: relative;
+    top:-225px;
+    left:100px ;
+}
+#contact{
+    height: auto;
+    text-align: center;
+}
+
+form {
+    max-width: 700px;
+    height:250px;
+    max-height: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Цвет рамки */
+    border-radius: 4px; /* Скругление углов */
+    box-sizing: border-box;
+    resize: none;
+}
+input[type='email']{
+    position: relative;
+    top: 50px;
+    left: -163px;
+}
+textarea{
+    height: 87px;
+    position: relative;
+    left: -150px;
+}
+button[type="submit"] {
+    height: 50px;
+    width: 100px;
+    background-color: #007bff; /* Цвет фона кнопки */
+    color: #fff; /* Цвет текста кнопки */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    top: 100px;
+    left: -450px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Цвет фона кнопки при наведении */
+}
+
+
+#name{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+
+.zigzag {
+  position: relative;
+
+  left: -15px;
+  width: 100%;
+  max-width: 105px; 
+  margin: 20px auto; 
+}
+
+.zigzag svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.zigzag .st0 {
+  fill: none;
+}
+
+.zigzag .st1 {
+  fill: none;
+  stroke-width:9; /* Увеличиваем толщину линии */
+}
+
+.zigzag svg:nth-of-type(1) .st1 {
+  stroke: #eabebe; /* Белый цвет для первой волнистой линии */
+}
+
+.zigzag svg:nth-of-type(2) .st1 {
+  stroke: #8830b5; /* Нежно-фиолетовый цвет для второй волнистой линии */
+}
+#tx-1{top: -143px;left:140px;}
+#tx-2{top: -143px;left:230px ;}
+#tx-3{top: -124px;left:120px ;}
+#tx-4{top:-143px;}
+#tx-5{left: 210px; top: -122px;}
+#tx-6{}
+#tx-7{}
+#tx-8{top:-202px ;}
+
+.hamburger{
+    display: flex;
+}
+@media only screen and (max-width: 1220px){
+#tx-1{top:-164px;}
+#tx-2{}
+#tx-3{top:-143px;}
+#tx-4{top:-165px;}
+#tx-5{top:-144px;}
+#tx-6{top:-247px;}
+#tx-7{top:-247px;}
+#tx-8{}
+}
+@media only screen and (max-width: 1024px){
+    #log {
+        position: static;
+        margin-left: 20px;
+    }
+    .nav{
+        position: absolute;
+        right: 1px;
+    }
+    section {
+        padding: 5% 5%;
+    }
+
+    #hello {
+        height: 330px;
+        margin-top: 20px;
+    }
+
+    .io>img {
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .about {
+        width: 100%;
+    }
+
+    #about {
+        width: 100%;
+        max-width: none;
+    }
+
+    .about>button {
+        margin-right: 0;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        height: 55px;
+    }
+    .nav {
+        margin: 0;
+        position: fixed;
+        top: -100%;
+        transition: top 1s ease;
+        padding-bottom:300px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        z-index: 1100;
+
+        width: 100%;
+        background-color: #fa71bd;
+    }
+    .navColumn{
+
+        height: 660px;
+
+        top: 0;
+
+    }
+
+    .hamburger {
+        width: 30px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        z-index: 1000;
+    }
+
+    .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 24px;
+        }
+
+
+    
+
+.bar {
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+    #log {
+        position: static;
+        margin-left: 20px;
+    }
+
+   
+    section {
+        padding: 5% 5%;
+    }
+
+    #hello {
+        height: auto;
+        margin-top: 20px;
+    }
+
+    button[type="submit"] {
+        top: 0;
+        left: -200px;
+        margin: 20px auto;
+    }
+
+    input[type='email'] {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 20px auto;
+    }
+    #id_name{
+        position: relative;
+        top: 0;
+        left: -20px;
+        margin: 20px auto;
+    }
+    textarea {
+        position: relative;
+        top: 40px;
+        left: -220px;
+        margin: 20px auto;
+    }
+
+    .io>img {
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .about {
+        width: 100%;
+    }
+
+    #about {
+        width: 100%;
+        max-width: none;
+    }
+
+    .about>button {
+        margin-right: 0;
+    }
+    
+    .skill{
+        width:200px;
+    }
+#tx-1{top:-184px;}
+#tx-2{top:-163px;}
+#tx-3{top:-163px;}
+#tx-4{top:-185px;}
+#tx-5{top:-144px;}
+#tx-6{top:-315px;}
+#tx-7{top:-293px;}
+#tx-8{top:-248px;}
+}
+
+/* Styles for phones */
+@media only screen and (max-width: 480px){
+    header{
+        height: 55px;
+    }
+    #hello{
+        height: auto;
+    }
+    .zigzag{
+        display: none;
+    }
+    .io>img {
+
+        width: 90%;
+        max-width: 400px;
+        height: 50%;
+    }
+    #skills{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    #skills>.title{
+        height: 20px;
+    }
+    #skills>h2{
+        position: relative;
+        left: 1px;
+    }
+    #skills>div{
+        padding: 20px;
+    }
+
+    #expirience{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    #expirience>.title{
+        height: 20px;
+    }
+    #expirience>h2{
+        position: relative;
+        left: 1px;
+    }
+    #expirience>.expir{
+        position: relative;
+        left: 1px;
+    }
+    #expirience>.expir>p{
+        width: 400px;
+    }
+    #tx-3{
+        top: -145px;
+    }
+
+    #education{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    #education>.title{
+        height: 20px;
+    }
+    #education>h2{
+        position: relative;
+        left: 1px;
+    }
+    #education>.edu{
+        position: relative;
+        left: 1px;
+    }
+    #education>.edu>p{
+        width: 400px;
+    }
+
+    #feedback{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    #feedback>.title{
+        height: 20px;
+    }
+    #feedback>h2{
+        width: 400px;
+        position: relative;
+        left: 1px;
+    }
+    #feedback>.feed{
+        position: relative;
+        left: 1px;
+    }
+    #feedback>.feed>p{
+        width: 400px;
+    }
+    #feedback>.feed>img{
+        position: relative;
+
+        left: 0px;
+        width: 400px;
+        height: 100px;
+    }
+    #im-1{
+        top: 250px;
+    }
+    #im-2{
+        top: 240px;
+    }
+    #im-3{
+        top: 200px;
+    }
+    #tx-6{
+        top: -391px;
+    }
+    #tx-7{
+        top: -368px;
+    }
+    #tx-8{
+        top: -321px;
+    }
+
+    #contact{
+      height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+     #contact>.title{
+        height: 20px;
+    }
+     #contact>form{
+        position: relative;
+        left: 90px;
+    }
+    input[type='text']{
+        width: 160px;
+    }
+    input[type='email']{
+        width: 160px;
+        position: relative;
+        top: 30px;
+        left: -160px;
+    }
+    textarea{
+        width: 160px;
+        height:100px;
+        top: 80px;
+        left: -320px;
+    }
+    button[type="submit"] {
+        top: 190px;
+        left: -455px;
+
+    }
+}
